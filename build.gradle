@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+    id 'java-library'
+    id 'eclipse'
+    id 'application'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '17'
+
+repositories {
+	mavenCentral()
+      maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
